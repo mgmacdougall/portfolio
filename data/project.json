@@ -2,7 +2,15 @@
   "projects": [
     {
       "id": 1,
-      "project_name": "test"
+      "project_name": "test",
+      "description": "test2",
+      "technologies": "test2",
+      "live_link": "#",
+      "github_link": "here",
+      "images_url": [
+        "image1",
+        "image2"
+      ]
     },
     {
       "id": 2,
