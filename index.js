@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
+const data = require('./data/project.json');
 
 const PORT = process.env.PORT || 3000;
 
@@ -19,7 +20,8 @@ app.use('/static', express.static(path.join(__dirname, 'public'))); // static di
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-	res.status(200).render('index.pug');
+	const { projects } = data;
+	res.status(200).render('index.pug', { projects });
 });
 
 app.get('/about', (req, res) => {
@@ -28,21 +30,13 @@ app.get('/about', (req, res) => {
 
 app.get('/project/:id', (req, res) => {
 	let id = req.params.id;
-	fs.readFile(dataFilePath, (err, data) => {
-		if (err) {
-			let error = new Error(err);
-			error.message = 'A problem occurred to datasource.';
-			return res.send(error);
-		} else {
-			let parsedData = JSON.parse(data);
-			let found = parsedData.projects.filter((v) => v.id == id);
-			if (found.length > 0) {
-				return res.json(found);
-			} else {
-				return res.redirect('/');
-			}
-		}
-	});
+	const { projects } = data;
+	let found = projects.filter((v) => v.id == id);
+	if (found.length > 0) {
+		return res.json(found);
+	} else {
+		return res.redirect('/');
+	}
 });
 
 // Start the app
