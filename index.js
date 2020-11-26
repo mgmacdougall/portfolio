@@ -1,9 +1,13 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
-
-const projectData = require('./data/project.json');
+const fs = require('fs');
 const pug = require('pug');
+
+const sourceFile = process.env.DATASOURCE || 'data/project.json';
+const PORT = process.env.PORT || 3000;
+
+let dataFilePath = path.join(__dirname, sourceFile); // data file path
 
 // Init the app
 const app = express();
@@ -23,10 +27,25 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/project/:id', (req, res) => {
-	res.status(200).render('project.pug');
+	let id = req.params.id;
+	fs.readFile(dataFilePath, (err, data) => {
+		if (err) {
+			let error = new Error(err);
+			error.message = 'A problem occurred to datasource.';
+			return res.send(error.message);
+		} else {
+			let parsedData = JSON.parse(data);
+			let found = parsedData.projects.filter((v) => v.id == id);
+			if (found.length > 0) {
+				return res.json(found);
+			} else {
+				return res.redirect('/');
+			}
+		}
+	});
 });
 
 // Start the app
-app.listen(3000, () => {
-	console.log(`Server started on port 3000`);
+app.listen(PORT, () => {
+	console.log(`Server started on port ${PORT}`);
 });
