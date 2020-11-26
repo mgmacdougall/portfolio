@@ -2,19 +2,17 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
-const data = require('./data/project.json');
-
-const PORT = process.env.PORT || 3000;
 
 const DATA = process.env.DATASOURCE || 'data/project.json';
-let dataFilePath = path.join(__dirname, DATA); // data file path
+const data = require(path.join(__dirname, DATA));
+
+const PORT = process.env.PORT || 3000;
 
 const app = express(); // Init the app
 app.use(morgan('tiny')); // logging service
 
 // Set up of the view engine
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(path.join(__dirname, dataFilePath))); // project.json file
 app.use('/static', express.static(path.join(__dirname, 'public'))); // static directory for public assets
 
 app.set('view engine', 'pug');
