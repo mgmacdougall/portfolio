@@ -2,20 +2,20 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 const fs = require('fs');
-const pug = require('pug');
 
-const sourceFile = process.env.DATASOURCE || 'data/project.json';
 const PORT = process.env.PORT || 3000;
 
-let dataFilePath = path.join(__dirname, sourceFile); // data file path
+const DATA = process.env.DATASOURCE || 'data/project.json';
+let dataFilePath = path.join(__dirname, DATA); // data file path
 
-// Init the app
-const app = express();
+const app = express(); // Init the app
 app.use(morgan('tiny')); // logging service
 
 // Set up of the view engine
 app.set('views', path.join(__dirname, 'views'));
-app.use(express.static(path.join(__dirname, 'data'))); // project.json file
+app.use(express.static(path.join(__dirname, dataFilePath))); // project.json file
+app.use('/static', express.static(path.join(__dirname, 'public'))); // static directory for public assets
+
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
@@ -32,7 +32,7 @@ app.get('/project/:id', (req, res) => {
 		if (err) {
 			let error = new Error(err);
 			error.message = 'A problem occurred to datasource.';
-			return res.send(error.message);
+			return res.send(error);
 		} else {
 			let parsedData = JSON.parse(data);
 			let found = parsedData.projects.filter((v) => v.id == id);
