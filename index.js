@@ -2,6 +2,7 @@ const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
 
+const projectData = require('./data/project.json');
 const pug = require('pug');
 
 // Init the app
@@ -10,6 +11,7 @@ app.use(morgan('tiny')); // logging service
 
 // Set up of the view engine
 app.set('views', path.join(__dirname, 'views'));
+app.use(express.static(path.join(__dirname, 'data'))); // project.json file
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
@@ -21,7 +23,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/project/:id', (req, res) => {
-	// res.status(200).render('project.pug');
+	res.status(200).render('project.pug');
 });
 
 // Start the app
