@@ -89,6 +89,31 @@
         "oop_game-v2_03.png",
         "oop_game-v2_04.png"
       ]
+    },
+    {
+      "id": 5,
+      "project_name": "Public API Request",
+      "description": "A application that creates an employee directory by fetching data from the `randomuser.me` site.  Page loads random users from the `randomuser.me` site. Site includes a search field to search for partial and full matches of users.  The end  user can reset the search using the 'reset' button. Clicking on an employee tile will pop up a dialog with more detailed information on the employee.  Navigation can be done in the employee infomation by clicking the 'next' or 'previous' buttons.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Event Listeners",
+        "JSON",
+        "API Requests",
+        "Promises",
+        "Filters and Maps"
+      ],
+      "live_link": "http://www.google.com",
+      "github_link": "https://github.com/mgmacdougall/PublicAPI",
+      "internal_name": "public_api_request-v1",
+      "images_url": [
+        "public_api_request-v1_main.png",
+        "public_api_request-v1_01.png",
+        "public_api_request-v1_02.png",
+        "public_api_request-v1_03.png",
+        "public_api_request-v1_04.png"
+      ]
     }
   ]
 }
