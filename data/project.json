@@ -165,6 +165,44 @@
           "description": "Employee Navigation & More Info:"
         }
       ]
+    },
+    {
+      "id": 6,
+      "project_name": "To Do Application",
+      "description": "A very minimalistic `TODO` application.  The user can add, remove, and re-organize the order of the to do items.  The app is persistent as it makes use Local Storage in the browser.  So the user can close the browser and re-open the browser, and the to do items will display from the previous session.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "JS Node API",
+        "Filters and Maps"
+      ],
+      "live_link": "https://mgmacdougall.github.io/todoapp/",
+      "github_link": "https://github.com/mgmacdougall/todoapp",
+      "internal_name": "todoapp",
+      "images_url": [
+        "todoapp_main.png",
+        {
+          "name": "todoapp_01.png",
+          "description": "Default To Do Landing Page:"
+        },
+        {
+          "name": "todoapp_02.png",
+          "description": "Adding a To Do Item Results:"
+        },
+        {
+          "name": "todoapp_03.png",
+          "description": "Changing To Do Order - using the 'Up' button:"
+        },
+        {
+          "name": "todoapp_04.png",
+          "description": "Browser Local Storage (Chrome) before 'Save' button clicked:"
+        },
+        {
+          "name": "todoapp_05.png",
+          "description": "Browser Local Storage (Chrome) after 'Save' button clicked:"
+        }
+      ]
     }
   ]
 }
