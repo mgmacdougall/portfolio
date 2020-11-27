@@ -2,14 +2,20 @@
   "projects": [
     {
       "id": 1,
-      "project_name": "test",
-      "description": "test2",
-      "technologies": "test2",
-      "live_link": "#",
-      "github_link": "here",
+      "project_name": "Random Quote Generator",
+      "description": "Static HTML & JS site that displays a random quote when the user clicks the show another quote button.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "live_link": "http://www.google.ca",
+      "github_link": "https://github.com/mgmacdougall/a_random_quote_generator-v1",
+      "internal_name": "random_quotes",
       "images_url": [
-        "image1",
-        "image2"
+        "random_quotes_main.png",
+        "random_quotes_01.png",
+        "random_quotes_02.png"
       ]
     },
     {
@@ -19,19 +25,22 @@
       "technologies": "test2",
       "live_link": "#",
       "github_link": "here",
+      "internal_name": "random_quotes",
       "images_url": [
-        "image1",
+        "random_quotes_main.png",
         "image2"
       ]
     },
     {
       "id": 3,
       "project_name": "test",
+      "internal_name": "random_quotes",
       "description": "test2",
       "technologies": "test2",
       "live_link": "#",
       "github_link": "here",
       "images_url": [
+        "random_quotes_main.png",
         "image1",
         "image2"
       ]
@@ -39,11 +48,13 @@
     {
       "id": 4,
       "project_name": "test",
+      "internal_name": "random_quotes",
       "description": "test2",
       "technologies": "test2",
       "live_link": "#",
       "github_link": "here",
       "images_url": [
+        "random_quotes_main.png",
         "image1",
         "image2"
       ]

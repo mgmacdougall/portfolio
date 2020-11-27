@@ -29,9 +29,10 @@ app.get('/about', (req, res) => {
 app.get('/project/:id', (req, res) => {
 	let id = req.params.id;
 	const { projects } = data;
-	let found = projects.filter((v) => v.id == id);
-	if (found.length > 0) {
-		return res.json(found);
+	let project = projects.filter((v) => v.id == id);
+	if (project.length === 1) {
+		let proj = project[0];
+		res.status(200).render('project.pug', { project: proj });
 	} else {
 		return next();
 	}
@@ -47,7 +48,7 @@ app.use((req, res, next) => {
 // General catch all error handler to catch any code related errors
 app.use((err, req, res, next) => {
 	const error = new Error('Server envountered an error processing the request.');
-	error.status(500);
+	error.status = 500;
 	res.render('error.pug', { error });
 });
 
