@@ -9,7 +9,7 @@
         "JavaScript",
         "CSS"
       ],
-      "live_link": "http://www.google.ca",
+      "live_link": "https://mgmacdougall.github.io/a_random_quote_generator-v1",
       "github_link": "https://github.com/mgmacdougall/a_random_quote_generator-v1",
       "internal_name": "random_quotes",
       "images_url": [
@@ -36,7 +36,7 @@
         "Filtering",
         "DOM Manipulation"
       ],
-      "live_link": "http://www.google.ca",
+      "live_link": "https://mgmacdougall.github.io/pagination",
       "github_link": "https://github.com/mgmacdougall/pagination",
       "internal_name": "list_pagination",
       "images_url": [
@@ -73,7 +73,7 @@
         "Query Selectors",
         "Validation"
       ],
-      "live_link": "http://www.google.ca",
+      "live_link": "https://mgmacdougall.github.io/interactiveforms/",
       "github_link": "https://github.com/mgmacdougall/interactiveforms",
       "internal_name": "interactive_form",
       "images_url": [
@@ -110,7 +110,7 @@
         "Query Selectors",
         "Key Bindings"
       ],
-      "live_link": "http://www.google.com",
+      "live_link": " https://mgmacdougall.github.io/oop_game-v2",
       "github_link": "https://github.com/mgmacdougall/oop_game-v2",
       "internal_name": "oop_game-v2",
       "images_url": [
@@ -147,7 +147,7 @@
         "Promises",
         "Filters and Maps"
       ],
-      "live_link": "http://www.google.com",
+      "live_link": "https://mgmacdougall.github.io/PublicAPI",
       "github_link": "https://github.com/mgmacdougall/PublicAPI",
       "internal_name": "public_api_request-v1",
       "images_url": [
