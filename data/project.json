@@ -42,30 +42,52 @@
     },
     {
       "id": 3,
-      "project_name": "test",
-      "internal_name": "random_quotes",
-      "description": "test2",
-      "technologies": "test2",
-      "live_link": "#",
-      "github_link": "here",
+      "project_name": "Interactive Form",
+      "description": "An interactive form where user selections are verified, elements are updated dynamically based on the user selection(s). Then the data is Posted when the user submits a valid form.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Event Listeners",
+        "Filtering",
+        "DOM Manipulation",
+        "Query Selectors",
+        "Validation"
+      ],
+      "live_link": "http://www.google.ca",
+      "github_link": "https://github.com/mgmacdougall/interactiveforms",
+      "internal_name": "interactive_form",
       "images_url": [
-        "random_quotes_main.png",
-        "image1",
-        "image2"
+        "interactive_form_main.png",
+        "interactive_form_01.png",
+        "interactive_form_02.png",
+        "interactive_form_03.png",
+        "interactive_form_04.png"
       ]
     },
     {
       "id": 4,
-      "project_name": "test",
-      "internal_name": "random_quotes",
-      "description": "test2",
-      "technologies": "test2",
-      "live_link": "#",
-      "github_link": "here",
+      "project_name": "OOP Game Show App",
+      "description": "An interactive game where the user has to guess a random phrase.  Each correct letter guess will display on a gameboard, each incorrect guess removes a life.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Event Listeners",
+        "Filtering",
+        "DOM Manipulation",
+        "Query Selectors",
+        "Key Bindings"
+      ],
+      "live_link": "http://www.google.com",
+      "github_link": "https://github.com/mgmacdougall/oop_game-v2",
+      "internal_name": "oop_game-v2",
       "images_url": [
-        "random_quotes_main.png",
-        "image1",
-        "image2"
+        "oop_game-v2_main.png",
+        "oop_game-v2_01.png",
+        "oop_game-v2_02.png",
+        "oop_game-v2_03.png",
+        "oop_game-v2_04.png"
       ]
     }
   ]
