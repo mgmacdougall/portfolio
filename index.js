@@ -23,7 +23,6 @@ app.get('/', (req, res) => {
 });
 
 app.get('/about', (req, res) => {
-	// throw new Error('Something went wrong');
 	res.status(200).render('about.pug');
 });
 
@@ -34,7 +33,6 @@ app.get('/project/:id', (req, res) => {
 	if (found.length > 0) {
 		return res.json(found);
 	} else {
-		// return res.redirect('/');
 		return next();
 	}
 });
@@ -43,15 +41,16 @@ app.get('/project/:id', (req, res) => {
 app.use((req, res, next) => {
 	const error = new Error('Encountered and error');
 	error.status = 404;
-	return res.send(error.message);
+	res.status(404).render('page-not-found.pug', { error });
 });
 
 // General catch all error handler to catch any code related errors
 app.use((err, req, res, next) => {
-	if (err) {
-		console.log('Encountered  general error');
-	}
+	const error = new Error('Server envountered an error processing the request.');
+	error.status(500);
+	res.render('error.pug', { error });
 });
+
 // Start the app
 app.listen(PORT, () => {
 	console.log(`Server started on port ${PORT}`);
