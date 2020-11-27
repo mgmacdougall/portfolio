@@ -14,8 +14,14 @@
       "internal_name": "random_quotes",
       "images_url": [
         "random_quotes_main.png",
-        "random_quotes_01.png",
-        "random_quotes_02.png"
+        {
+          "name": "random_quotes_01.png",
+          "description": "Example Quote:"
+        },
+        {
+          "name": "random_quotes_02.png",
+          "description": "Example Quote:"
+        }
       ]
     },
     {
@@ -35,10 +41,22 @@
       "internal_name": "list_pagination",
       "images_url": [
         "list_pagination_main.png",
-        "list_pagination_01.png",
-        "list_pagination_02.png",
-        "list_pagination_03.png",
-        "list_pagination_04.png"
+        {
+          "name": "list_pagination_01.png",
+          "description": "Default Landing Page:"
+        },
+        {
+          "name": "list_pagination_02.png",
+          "description": "Navigation buttons:"
+        },
+        {
+          "name": "list_pagination_03.png",
+          "description": "Sample Search:"
+        },
+        {
+          "name": "list_pagination_04.png",
+          "description": "Sample Search Navbar updated:"
+        }
       ]
     },
     {
@@ -60,10 +78,22 @@
       "internal_name": "interactive_form",
       "images_url": [
         "interactive_form_main.png",
-        "interactive_form_01.png",
-        "interactive_form_02.png",
-        "interactive_form_03.png",
-        "interactive_form_04.png"
+        {
+          "name": "interactive_form_01.png",
+          "description": "Default Page:"
+        },
+        {
+          "name": "interactive_form_02.png",
+          "description": "Simple Custom Email Validation:"
+        },
+        {
+          "name": "interactive_form_03.png",
+          "description": "Dynamic DOM update - Registration  Selection:"
+        },
+        {
+          "name": "interactive_form_04.png",
+          "description": "Dynamic DOM update - Payment Information:"
+        }
       ]
     },
     {
@@ -85,10 +115,22 @@
       "internal_name": "oop_game-v2",
       "images_url": [
         "oop_game-v2_main.png",
-        "oop_game-v2_01.png",
-        "oop_game-v2_02.png",
-        "oop_game-v2_03.png",
-        "oop_game-v2_04.png"
+        {
+          "name": "oop_game-v2_01.png",
+          "description": "Default Game Page:"
+        },
+        {
+          "name": "oop_game-v2_02.png",
+          "description": "Game Letter Selection:"
+        },
+        {
+          "name": "oop_game-v2_03.png",
+          "description": "Game Lost:"
+        },
+        {
+          "name": "oop_game-v2_04.png",
+          "description": "Game Won:"
+        }
       ]
     },
     {
@@ -110,10 +152,18 @@
       "internal_name": "public_api_request-v1",
       "images_url": [
         "public_api_request-v1_main.png",
-        "public_api_request-v1_01.png",
-        "public_api_request-v1_02.png",
-        "public_api_request-v1_03.png",
-        "public_api_request-v1_04.png"
+        {
+          "name": "public_api_request-v1_01.png",
+          "description": "Default Employee Page:"
+        },
+        {
+          "name": "public_api_request-v1_02.png",
+          "description": "Search Results:"
+        },
+        {
+          "name": "public_api_request-v1_03.png",
+          "description": "Employee Navigation:"
+        }
       ]
     }
   ]

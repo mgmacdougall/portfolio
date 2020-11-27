@@ -29,4 +29,5 @@ block content
     //- Replace the URLs in the src attributes below with template literals and interpolation to dynamically add three project images.  You only have to add one image.  But adding more images to show your app in different states demonstrates a level of thoroughness and professionalism that potential employers will like to see. 
     for img in project.images_url
       unless img === `${project.internal_name}_main.png`
-        img.image(src=`/static/imgs/${img}`)
+        h6 #{`${img.description}`}
+        img.image(src=`/static/imgs/${img.name}`)
