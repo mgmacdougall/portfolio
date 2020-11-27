@@ -20,15 +20,24 @@
     },
     {
       "id": 2,
-      "project_name": "T2",
-      "description": "t2",
-      "technologies": "test2",
-      "live_link": "#",
-      "github_link": "here",
-      "internal_name": "random_quotes",
+      "project_name": "List Pagination and Filtering",
+      "description": "Project using code to break up a large list of user data into multiple pages. The project also includes a live search feature that returns partial and full matches of users.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Event Listeners",
+        "Filtering",
+        "DOM Manipulation"
+      ],
+      "live_link": "http://www.google.ca",
+      "github_link": "https://github.com/mgmacdougall/pagination",
+      "internal_name": "list_pagination",
       "images_url": [
-        "random_quotes_main.png",
-        "image2"
+        "list_pagination_main.png",
+        "list_pagination_01.png",
+        "list_pagination_02.png",
+        "list_pagination_03.png"
       ]
     },
     {
