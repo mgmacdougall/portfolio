@@ -34,7 +34,7 @@ The current Applications included are:
 ## Notes for Exceed Requirements:
 
 1. The `error.pug` and `page-not-found.pug` are for the 404 error and the other error requirements.
-2. Running `npm run start` starts the server. Running `node index.js` starts the server.
+2. Running `npm run start` starts the server. Running `node app.js` starts the server.
 3. Error handling in place to handle the page not found and the code exists for general server errors at the bottom of the routes.
 4. The following CSS changes have been made:
 
