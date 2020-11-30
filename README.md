@@ -30,3 +30,16 @@ The current Applications included are:
 2. To start the application in live mode mode run the `npm run start` that will pick up the datasource setting in the dotenv.
 3. To run the application in dev mode run the `npm run start-dev` that will pick up the datasource setting in the dotenv.
 4. Set the PORT value in the dotenv if you want using the `PORT=<port number>`, otherwise it will default to port 3000.
+
+## Notes for Exceed Requirements:
+
+1. The `error.pug` and `page-not-found.pug` are for the 404 error and the other error requirements.
+2. Running `npm run start` starts the server. Running `node index.js` starts the server.
+3. Error handling in place to handle the page not found and the code exists for general server errors at the bottom of the routes.
+4. The following CSS changes have been made:
+
+- Layered box shadow on the cards on the index page.
+- Gradient coloring added to the side panel
+- Buttons rounded in the app + gradient coloring to match have been adde
+- Scroll over the buttons changes the color to a solid light blue
+- The text within the side panel (the `p` and the `a`) have been changed to white to display better.
