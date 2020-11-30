@@ -1,0 +1,208 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "project_name": "Random Quote Generator",
+      "description": "Static HTML & JS site that displays a random quote when the user clicks the show another quote button.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS"
+      ],
+      "live_link": "https://mgmacdougall.github.io/a_random_quote_generator-v1",
+      "github_link": "https://github.com/mgmacdougall/a_random_quote_generator-v1",
+      "internal_name": "random_quotes",
+      "images_url": [
+        "random_quotes_main.png",
+        {
+          "name": "random_quotes_01.png",
+          "description": "Example Quote:"
+        },
+        {
+          "name": "random_quotes_02.png",
+          "description": "Example Quote:"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "project_name": "List Pagination and Filtering",
+      "description": "Project using code to break up a large list of user data into multiple pages. The project also includes a live search feature that returns partial and full matches of users.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Event Listeners",
+        "Filtering",
+        "DOM Manipulation"
+      ],
+      "live_link": "https://mgmacdougall.github.io/pagination",
+      "github_link": "https://github.com/mgmacdougall/pagination",
+      "internal_name": "list_pagination",
+      "images_url": [
+        "list_pagination_main.png",
+        {
+          "name": "list_pagination_01.png",
+          "description": "Default Landing Page:"
+        },
+        {
+          "name": "list_pagination_02.png",
+          "description": "Navigation buttons:"
+        },
+        {
+          "name": "list_pagination_03.png",
+          "description": "Sample Search:"
+        },
+        {
+          "name": "list_pagination_04.png",
+          "description": "Sample Search Navbar updated:"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "project_name": "Interactive Form",
+      "description": "An interactive form where user selections are verified, elements are updated dynamically based on the user selection(s). Then the data is Posted when the user submits a valid form.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Event Listeners",
+        "Filtering",
+        "DOM Manipulation",
+        "Query Selectors",
+        "Validation"
+      ],
+      "live_link": "https://mgmacdougall.github.io/interactiveforms/",
+      "github_link": "https://github.com/mgmacdougall/interactiveforms",
+      "internal_name": "interactive_form",
+      "images_url": [
+        "interactive_form_main.png",
+        {
+          "name": "interactive_form_01.png",
+          "description": "Default Page:"
+        },
+        {
+          "name": "interactive_form_02.png",
+          "description": "Simple Custom Email Validation:"
+        },
+        {
+          "name": "interactive_form_03.png",
+          "description": "Dynamic DOM update - Registration  Selection:"
+        },
+        {
+          "name": "interactive_form_04.png",
+          "description": "Dynamic DOM update - Payment Information:"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "project_name": "OOP Game Show App",
+      "description": "An interactive game where the user has to guess a random phrase.  Each correct letter guess will display on a gameboard, each incorrect guess removes a life.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Event Listeners",
+        "Filtering",
+        "DOM Manipulation",
+        "Query Selectors",
+        "Key Bindings"
+      ],
+      "live_link": " https://mgmacdougall.github.io/oop_game-v2",
+      "github_link": "https://github.com/mgmacdougall/oop_game-v2",
+      "internal_name": "oop_game-v2",
+      "images_url": [
+        "oop_game-v2_main.png",
+        {
+          "name": "oop_game-v2_01.png",
+          "description": "Default Game Page:"
+        },
+        {
+          "name": "oop_game-v2_02.png",
+          "description": "Game Letter Selection:"
+        },
+        {
+          "name": "oop_game-v2_03.png",
+          "description": "Game Lost:"
+        },
+        {
+          "name": "oop_game-v2_04.png",
+          "description": "Game Won:"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "project_name": "Public API Request",
+      "description": "A application that creates an employee directory by fetching data from the `randomuser.me` site.  Page loads random users from the `randomuser.me` site. Site includes a search field to search for partial and full matches of users.  The end  user can reset the search using the 'reset' button. Clicking on an employee tile will pop up a dialog with more detailed information on the employee.  Navigation can be done in the employee infomation by clicking the 'next' or 'previous' buttons.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "Event Listeners",
+        "JSON",
+        "API Requests",
+        "Promises",
+        "Filters and Maps"
+      ],
+      "live_link": "https://mgmacdougall.github.io/PublicAPI",
+      "github_link": "https://github.com/mgmacdougall/PublicAPI",
+      "internal_name": "public_api_request-v1",
+      "images_url": [
+        "public_api_request-v1_main.png",
+        {
+          "name": "public_api_request-v1_01.png",
+          "description": "Default Employee Page:"
+        },
+        {
+          "name": "public_api_request-v1_02.png",
+          "description": "Search Results:"
+        },
+        {
+          "name": "public_api_request-v1_03.png",
+          "description": "Employee Navigation & More Info:"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "project_name": "To Do Application",
+      "description": "A very minimalistic `TODO` application.  The user can add, remove, and re-organize the order of the to do items.  The app is persistent as it makes use Local Storage in the browser.  So the user can close the browser and re-open the browser, and the to do items will display from the previous session.",
+      "technologies": [
+        "HTML",
+        "JavaScript",
+        "CSS",
+        "JS Node API",
+        "Filters and Maps"
+      ],
+      "live_link": "https://mgmacdougall.github.io/todoapp/",
+      "github_link": "https://github.com/mgmacdougall/todoapp",
+      "internal_name": "todoapp",
+      "images_url": [
+        "todoapp_main.png",
+        {
+          "name": "todoapp_01.png",
+          "description": "Default To Do Landing Page:"
+        },
+        {
+          "name": "todoapp_02.png",
+          "description": "Adding a To Do Item Results:"
+        },
+        {
+          "name": "todoapp_03.png",
+          "description": "Changing To Do Order - using the 'Up' button:"
+        },
+        {
+          "name": "todoapp_04.png",
+          "description": "Browser Local Storage (Chrome) before 'Save' button clicked:"
+        },
+        {
+          "name": "todoapp_05.png",
+          "description": "Browser Local Storage (Chrome) after 'Save' button clicked:"
+        }
+      ]
+    }
+  ]
+}
