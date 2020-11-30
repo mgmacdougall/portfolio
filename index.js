@@ -4,7 +4,7 @@ const path = require('path');
 const fs = require('fs');
 
 const DATA = process.env.DATASOURCE || 'data/project.json';
-const data = require(path.join(__dirname, DATA));
+const data_path = require(path.join(__dirname, DATA));
 
 const PORT = process.env.PORT || 3000;
 
@@ -18,7 +18,7 @@ app.use('/static', express.static(path.join(__dirname, 'public'))); // static di
 app.set('view engine', 'pug');
 
 app.get('/', (req, res) => {
-	const { projects } = data;
+	const { projects } = data_path;
 	res.status(200).render('index.pug', { projects });
 });
 
@@ -28,7 +28,7 @@ app.get('/about', (req, res) => {
 
 app.get('/project/:id', (req, res) => {
 	let id = req.params.id;
-	const { projects } = data;
+	const { projects } = data_path;
 	let project = projects.filter((v) => v.id == id);
 	if (project.length === 1) {
 		let proj = project[0];
