@@ -1,7 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
 const path = require('path');
-const fs = require('fs');
 
 const DATA = process.env.DATASOURCE || 'data/project.json';
 const data_path = require(path.join(__dirname, DATA));
@@ -13,7 +12,9 @@ app.use(morgan('tiny')); // logging service
 
 // Set up of the view engine
 app.set('views', path.join(__dirname, 'views'));
-app.use('/static', express.static(path.join(__dirname, 'public'))); // static directory for public assets
+
+// static directory for public assets
+app.use('/static', express.static(path.join(__dirname, 'public')));
 
 app.set('view engine', 'pug');
 
@@ -47,7 +48,7 @@ app.use((req, res, next) => {
 
 // General catch all error handler to catch any code related errors
 app.use((err, req, res, next) => {
-	const error = new Error('Server envountered an error processing the request.');
+	const error = new Error('Server encountered an error processing the request.');
 	error.status = 500;
 	res.render('error.pug', { error });
 });
