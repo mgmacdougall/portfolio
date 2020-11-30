@@ -25,8 +25,8 @@ The current Applications included are:
 
 ### Configuration notes
 
-1. Create a .env file at the root of the directory
-   place the location of the data file to be used (i.e. DATASOURCE='data/project.json').
+1. Rename the `sample.env` to `.env` at the root directory of the project.
+   If you want, change the PORT value in the file but leave the DATASOURCE alone.
 2. To start the application in live mode mode run the `npm run start` that will pick up the datasource setting in the dotenv.
 3. To run the application in dev mode run the `npm run start-dev` that will pick up the datasource setting in the dotenv.
 4. Set the PORT value in the dotenv if you want using the `PORT=<port number>`, otherwise it will default to port 3000.
